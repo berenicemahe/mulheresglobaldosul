@@ -1,1 +1,79 @@
-// Specific CSS for your home-page
+body {
+  background-color: white;
+}
+
+.main-container {
+  display: flex,
+}
+
+.banner-one {
+  width: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-one {
+  position: absolute;
+  left: 50%;
+  img {
+    width: 99vh;
+    max-height: 90vh;
+    object-fit: cover;
+  }
+}
+
+.logo {
+  width: 50vh;
+  padding-top: 70%;
+  padding-left: 40%;
+}
+
+.image-two {
+  left: 0%;
+  margin-top: 653px;
+  margin-left: -398px;
+  img {
+    width: 100vh;
+    max-height: 90vh;
+    object-fit: cover;
+  }
+}
+
+.image-three {
+  position: absolute;
+  left: 50%;
+  margin-top: 484px;
+  img {
+    width: 100vh;
+    max-height: 484px;
+    object-fit: cover;
+  }
+}
+
+.block1 {
+  left: 0%;
+  margin-top: 653px;
+  margin-left: -383px;
+}
+
+.image-four {
+  position: absolute;
+  left: 0%;
+  margin-top: 1621px;
+  margin-left: -20px;
+  img {
+    width: 100vh;
+    max-height: 90vh;
+    object-fit: cover;
+  }
+}
+
+// .container-five {
+//   background-color: black;
+//   margin-top: 2105px;
+//   margin-left: -750px;
+// }
+
+.container-four {
+  background-color: black;
+}
