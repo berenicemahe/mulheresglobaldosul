@@ -1,12 +1,37 @@
 .navbar {
+  display: flex;
   justify-content: space-between;
   background: white;
-}
-
-.navbar .navbar-collapse {
-  flex-grow: 0;
+  height: 80px;
 }
 
 .navbar .nav-item .nav-link {
-  color: #C50058 
+  color: #242424;
+  font-size: 14px;
+  &:hover {
+    color: $pink;
+    font-weight: bolder;
+  }
+}
+
+.navbar .nav-item {
+  .donate {
+    font-size: 14px;
+  }
+  .login {
+    font-size: 14px;
+    &:hover {
+      color: $pink;
+      background-color: white;
+      border-color: $pink;
+    }
+  }
+  .signup {
+    font-size: 14px;
+    &:hover {
+      color: white;
+      background-color: $pink;
+      border-color: $pink;
+    }
+  }
 }
