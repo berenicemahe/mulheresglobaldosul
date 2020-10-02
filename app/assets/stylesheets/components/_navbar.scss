@@ -8,15 +8,19 @@
 .navbar .nav-item .nav-link {
   color: #242424;
   font-size: 14px;
-  &:hover {
+  /* &:hover {
     color: $pink;
     font-weight: bolder;
-  }
+  } */
 }
 
 .navbar .nav-item {
   .donate {
     font-size: 14px;
+    color: $pink;
+    &:hover {
+      color: $pink;
+    }
   }
   .login {
     font-size: 14px;
@@ -34,4 +38,11 @@
       border-color: $pink;
     }
   }
+  .cart {
+    color: $pink;
+  }
+}
+
+.navbar .navbar-nav .dropdown-link {
+  font-size: 14px;
 }
