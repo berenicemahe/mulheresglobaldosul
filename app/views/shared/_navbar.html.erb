@@ -8,10 +8,23 @@
     <%= link_to "SOBRE", about_path, class: "nav-link" %>
     <%= link_to "LOJA", root_path, class: "nav-link" %>
     <%= link_to "CONTATO", contact_path, class: "nav-link" %>
-    <b><%= link_to "APOIE O PROJETO", root_path, class: "nav-link text-info donate" %></b>
+    <b><%= link_to "APOIE O PROJETO", root_path, class: "nav-link donate" %></b>
   </div>
 
   <% if user_signed_in? %>
+    <div class="nav-item d-flex">
+      <a class="cart pt-2 pr-3" href="#" role="button"><i class="fas fa-shopping-cart"></i></a>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <i class="fas fa-user-circle fa-lg avatar text-info ml-3 mt-2 pt-1" data-toggle="dropdown"></i>
+          <div class="dropdown-menu dropdown-menu-right">
+            <b><%= link_to "FAZER DOAÇÃO", root_path, class: "btn nav-link donate" %></b>
+            <%= link_to "SAIR", destroy_user_session_path, method: :delete, class: "btn nav-link", data: { confirm: "Você quer mesmo desconectar?" } %>
+          </div>
+        </li>
+      </ul>
+    </div>
   <% else %>
     <div class="nav-item d-flex">
       <%= link_to "ENTRAR", new_user_session_path, class: "btn btn-outline-info login mr-2" %>
