@@ -8,10 +8,10 @@
 .navbar .nav-item .nav-link {
   color: #242424;
   font-size: 14px;
-  /* &:hover {
+  &:hover {
     color: $pink;
     font-weight: bolder;
-  } */
+  }
 }
 
 .navbar .nav-item {
@@ -43,6 +43,9 @@
   }
 }
 
-.navbar .navbar-nav .dropdown-link {
-  font-size: 14px;
+.navbar .dropdown .nav-link {
+  &:hover {
+    color: $pink !important;
+    font-weight: normal;
+  }
 }
