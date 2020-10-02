@@ -1,4 +1,5 @@
 <div class="main-container col-12">
+
   <div class="container-one">
     <div class="banner-one">
       <div class="header-one">
@@ -12,32 +13,24 @@
     </div>
   </div>
 
-  <div class="container-two">
+  <div class="container-two col-12">
     <div class="banner-two">
-      <div class="header-two">
-        <div class="background-two col-6">
-        </div>
-      </div>
       <div class="image-two col-6">
         <img src="https://images.pexels.com/photos/3059745/pexels-photo-3059745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Image 2">
       </div>
     </div>
   </div>
 
-  <div class="container-three">
-    <div class="banner-three">
-      <div class="header-three">
-        <div class="image-three">
-          <img src="https://images.pexels.com/photos/3738095/pexels-photo-3738095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Image 2">
-        </div>
-      </div>
-      <div class="block1">
-
-      </div>
+  <div class="container-three col-12 d-flex">
+    <div class="image-three col-6">
+      <img src="https://images.pexels.com/photos/3738095/pexels-photo-3738095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Image 2">
+    </div>
+    <div class="img-color col-6">
+      <%= image_tag "containerthree.png", alt: "berenice", class: "image-one" %>
     </div>
   </div>
 
-  <div class="container-four">
+  <div class="container-four col-12">
     <div class="banner-four">
       <div class="header-four">
         <div class="background-four col-6">
@@ -49,12 +42,15 @@
     </div>
   </div>
 
-  <div class="container-five">
-    <div class="banner-five">
-      <div class="header-five">
-        <h1>Inscreva-se na newsletter</h1>
-        <h5>Fique por dentro de todas as novidades!</h5>
+  <div class="container-five col-12">
+    <div class="banner banner-five">
+      <div class="banner-content text-center">
+        <h1><strong>Inscreva-se na newsletter</strong></h1>
+        <p>Fique por dentro de todas as novidades!</p>
+        <input class="form-control" id="newsletter" name="newsletter" type="text" placeholder="Your email address">
+        <%= link_to "INSCREVA-SE", :type => "button", :class => "btn btn-primary"  %>
       </div>
     </div>
   </div>
 </div>
+
