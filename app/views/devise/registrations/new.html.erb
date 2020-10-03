@@ -1,25 +1,29 @@
-<h2>Sign up</h2>
-
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-    <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+  <div class="contrainer pt-2">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h2 class="text-center text-info mb-4 mt-5">Cadastre-se</h2>
+        <div class="row">
+          <div class="col">
+            <div class="form-inputs">
+              <div class="pb-3">
+                <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" }, placeholder: "Your email"%>
+              </div>
+              <div class="pb-3">
+                <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                          input_html: { autocomplete: "new-password" }, placeholder: "Your password" %>
+              </div>
+              <div class="pb-3">
+                <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" }, placeholder: "Confirm your password" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-actions mb-5">
+          <%= f.submit "CADASTRAR", class: "btn btn-info cadastrar" %>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>

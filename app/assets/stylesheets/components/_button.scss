@@ -1,0 +1,20 @@
+.cadastrar {
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  &:hover {
+    color: $pink;
+    background-color: white;
+    border-color: $pink;
+  }
+}
+.entrar {
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  &:hover {
+    color: white;
+    background-color: $pink;
+    border-color: $pink;
+  }
+}
