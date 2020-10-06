@@ -1,0 +1,43 @@
+h1 {
+  font-family: 'Roboto';
+  color: #C50058;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.process-wrapper {
+  margin: auto;
+  max-width: 1080px;
+}
+
+#progress-bar-container{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  margin-top: 59px;
+}
+
+#progress-bar-container ul {
+  padding:0;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+}
+
+#progress-bar-container li:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px #aaa;
+  transition: all ease 0.3s;
+}
+
