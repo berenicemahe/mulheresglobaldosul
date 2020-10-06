@@ -1,5 +1,9 @@
 // Specific CSS for your home-page
 
+body {
+  background-color: white;
+}
+
 h1 {
   font-family: 'Roboto';
   color: #C50058;
@@ -9,114 +13,187 @@ h1 {
   margin-bottom: 25px;
 }
 
-h2 {
-  font-family: 'Regular 400';
-  color: #C50058;
-  font-size: 35px;
-  text-align: right;
-  margin-top: 15px;
-  margin-bottom: 25px;
-
-}
-
-p {
-  text-align: justify;
-}
-
-
-body {
-  background-color: white;
-}
-
-.main-container {
-  display: flex,
-}
+// CONTAINER ONE
 
 .banner-one {
-  width: 50vh;
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-one {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  align-items: center;
 }
 
 .image-one {
   position: absolute;
   left: 50%;
   img {
-    width: 100vh;
-    max-height: 90vh;
+    width: 100%;
+    max-height: 100vh;
     object-fit: cover;
   }
 }
 
-.logo {
-  width: 50vh;
-  padding-top: 70%;
-  padding-left: 40%;
-}
+// CONTAINER TWO
 
 .container-two {
-  position: absolute;
-  margin-top: 653px;
-  margin-left: -50px;
+  max-height: 70vh;
 }
 
-.image-two img {
-  width: 100vh;
-  max-height: 90vh;
-  object-fit: cover;
+.banner-two {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
 }
+
+.header-two {
+  display: flex;
+  width: 50%;
+  height: 70vh;
+  align-items: center;
+}
+
+.image-two {
+  position: absolute;
+  right: 50%;
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+// CONTAINER THREE
 
 .container-three {
-  position: absolute;
-  margin-top: 1137px;
-  margin-left: -15px;
-  max-height: 484px;
+  max-height: 70vh;
+  background-color: $pink;
 }
 
-.image-three img {
+.banner-three {
   display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+}
+
+.header-three {
+  display: flex;
+  width: 50%;
+  height: 70vh;
+  align-items: center;
+}
+
+.image-three {
   position: absolute;
-  left: 100%;
-  width: 100vh;
-  max-height: 484px;
-  object-fit: cover;
+  left: 50%;
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
   }
-
-.img-color {
-  display: flex;
-  position: absolute;
-  margin-left: -537px;
-  max-height: 484px;
 }
+
+// CONTAINER FOUR
 
 .container-four {
-  margin-top: 1621px;
-  margin-left: -378px;
+  max-height: 70vh;
+}
+
+.banner-four {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+}
+
+.header-four {
+  display: flex;
+  width: 50%;
+  height: 70vh;
+  align-items: center;
 }
 
 .image-four {
   position: absolute;
-  left: 0%;
-  margin-left: -20px;
+  right: 50%;
   img {
-    width: 100vh;
-    max-height: 90vh;
+    width: 100%;
+    height: 70vh;
     object-fit: cover;
   }
 }
 
+// CONTAINER FIVE
+
 .container-five {
-  position: absolute;
+  height: 70vh;
+  background-color: $pink;
+}
+
+.banner-five {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
   align-items: center;
-  margin-left: -15px;
-  margin-top: 2105px;
-  height: 326px;
-  background-color: #C50058;
   color: white;
+  flex-direction: column;
 }
 
 .submit {
   display: flex;
+  .btn {
+    background-color: white;
+    color: $pink;
+    &:hover {
+      background-color: lightgray;
+      color: $pink;
+    }
+  }
 }
+
+// h1 {
+//   font-family: 'Regular 400';
+//   color: #C50058;
+//   font-size: 50px;
+//   text-align: center;
+//   margin-top: 30px;
+//   margin-bottom: 25px;
+// }
+
+// h2 {
+//   font-family: 'Regular 400';
+//   color: #C50058;
+//   font-size: 35px;
+//   text-align: right;
+//   margin-top: 15px;
+//   margin-bottom: 25px;
+
+// }
+
+// p {
+//   text-align: justify;
+// }
+
+// .container-five {
+//   position: absolute;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin-left: -15px;
+//   margin-top: 2105px;
+//   height: 326px;
+//   background-color: #C50058;
+//   color: white;
+// }
+
+// .submit {
+//   display: flex;
+// }
