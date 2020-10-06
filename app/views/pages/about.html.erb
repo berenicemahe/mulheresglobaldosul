@@ -1,14 +1,28 @@
 <div class='container'>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+  <div id="carouselExampleControls" class=" row justify-content-center carousel slide" data-ride="carousel">
+    <div class="carousel-inner col-12 col-lg-12">
       <div class="carousel-item active">
         <img class="d-block w-100" src="https://i.imgur.com/z5dktR0.jpg" alt="First slide">
+        
+        <div class="carousel-caption d-none d-md-block">
+          <%=link_to historia_path do %>
+            <h5 style= 'align-text:center; color:pink;'>Conheça nossa história</h5>       
+          <%end %>
+        </div>
+        
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="https://i.imgur.com/uDaLtXL.png" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style= 'align-text:center; color:pink;'>Aqui vai um texto pra testar o carrossel</h5>   
+        </div>
       </div>
+
       <div class="carousel-item">
         <img class="d-block w-100" src="https://i.imgur.com/ROvmpgK.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style= 'align-text:center; color:pink;'>Aqui vai um texto pra testar o carrossel</h5>       
+        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -21,7 +35,52 @@
     </a>
   </div>
 
+  <div class="row justify-content-center col-12 col-lg-12">
+    <h1>Quem somos</h1>
+  </div>
+  <div class='negocio-social row justify-content col-12 col-lg-12'>
+    <h2><i class="fas fa-globe-americas" style='font-size:30px;'></i> O negócio social</h2>
+    <p>Mulheres do Sul Global é um negócio social de empoderamento econômico de mulheres refugiadas,
+     inseridas em contextos de refúgio e vulnerabilidade social, baseado da promoção do empreendedorismo, 
+     capacitação de habilidades, criação e venda de peças de costura comprometidos com os novos paradigmas 
+     de se fazer e consumir sustentável.
+    <p>Nossa missão é promover o empoderamento econômico de mulheres refugiadas através do ofício da costura,
+    com o desenvolvimento de jornadas empreendedoras e redes de trabalho com valorização das identidades e 
+    conexões entre culturas.</p>
+  </div>
 
+  <div class='flex-container justify-content-center col-lg-12'>
+    <div class="flex-item image1 ">
+      <a href="https://imgur.com/uDaLtXL"><img src="https://i.imgur.com/uDaLtXL.png"/></a>
+    </div>
 
-  
+    <div class="flex-item ">   
+      <p style='margin-left: 10px'>Note that that browser support for these values is nuanced. For example, space-between n
+      ever got support from 
+      some versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN has detailed charts. The safest values 
+      are flex-start, flex-end, and center.There are also two additional keywords you can pair with these values: 
+      7safe and unsafe. Using safe ensures that however you do this type of positioning, you can’t push an element such 
+      that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”).
+      </p>
+    </div>
+  </div>
+
+    <div class='flex-container justify-content-center col-lg-12'>
+      <div class="flex-item ">   
+        <p style='margin-left: 10px'>Note that that browser support for these values is nuanced. For example, space-between 
+        never got support from 
+        some versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN has detailed charts. The safest values 
+        are flex-start, flex-end, and center.There are also two additional keywords you can pair with these values: 
+        7safe and unsafe. Using safe ensures that however you do this type of positioning, you can’t push an element such 
+        that it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”).
+        </p>
+      </div>
+      <div class="flex-item image1 ">
+        <a href="https://imgur.com/uDaLtXL"><img src="https://i.imgur.com/uDaLtXL.png"/></a>
+      </div>    
+    </div>
 </div>
+
+
+
+
