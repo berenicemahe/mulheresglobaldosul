@@ -1,32 +1,12 @@
-<!-- <div class="main-container col-12">
-
-  <div class="container-five col-12">
-    <div class="banner banner-five">
-      <div class="banner-content text-center">
-        <h1><strong>Inscreva-se na newsletter</strong></h1>
-        <p>Fique por dentro de todas as novidades!</p>
-        <div class="submit">
-          <input class="form-control" id="newsletter" name="newsletter" type="text" placeholder="Your email address">
-          <%= link_to "INSCREVA-SE", :type => "button", :class => "btn btn-primary btn-block"  %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<p>
-  <span id="navbar"></span>
-</p> -->
-
 <div class="container-one">
   <div class="banner-one">
     <div class="header-one">
       <div class="logo">
-        <img src="https://i.imgur.com/MrHwiKC.png" alt="Logo">
+        <%= image_tag("logo.png")%>
       </div>
 
       <div class="image-one">
-        <img src="https://images.pexels.com/photos/3812041/pexels-photo-3812041.jpeg" alt="Image 1">
+        <%= image_tag("image-one.jpeg")%>
       </div>
     </div>
   </div>
@@ -35,7 +15,7 @@
 <div class="container-two">
   <div class="banner-two">
     <div class="image-two">
-      <img src="https://images.pexels.com/photos/3059745/pexels-photo-3059745.jpeg" alt="Image 2">
+      <%= image_tag("image-two.jpeg")%>
     </div>
 
     <div class="header-two">
@@ -49,7 +29,7 @@
     </div>
 
     <div class="image-three">
-      <img src="https://images.pexels.com/photos/3738095/pexels-photo-3738095.jpeg" alt="Image 3">
+      <%= image_tag("image-three.jpeg")%>
     </div>
   </div>
 </div>
@@ -57,7 +37,7 @@
 <div class="container-four">
   <div class="banner-four">
     <div class="image-four">
-      <img src="https://images.pexels.com/photos/1206059/pexels-photo-1206059.jpeg" alt="Image 4">
+      <%= image_tag("image-four.jpeg")%>
     </div>
 
     <div class="header-four">
@@ -77,8 +57,6 @@
 
     <div class="submit">
       <p class="btn pl-5 pr-5 mt-4"><b>QUERO AJUDAR</b></p>
-      <%# <input class="form-control" id="newsletter" name="newsletter" type="text" placeholder="Insira seu e-mail">
-      <input type="submit" value="Inscreva-se" class="btn ml-3"> %>
     </div>
   </div>
 </div>
