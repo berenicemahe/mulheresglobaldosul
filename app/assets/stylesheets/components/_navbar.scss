@@ -1,25 +1,19 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
   background: white;
-  height: 80px;
 }
 
-.navbar .nav-item .nav-link {
-  color: #242424;
-  font-size: 14px;
-  /* &:hover {
-    color: $pink;
-    font-weight: bolder;
-  } */
+.navbar .navbar-icon img {
+  max-width: 170px;
+  max-height: 170px;
 }
 
 .navbar .nav-item {
+  font-size: 14px;
   .donate {
-    font-size: 14px;
-    color: $pink;
+    color: $pink !important;
     &:hover {
       color: $pink;
+      font-weight: bolder !important;
     }
   }
   .login {
@@ -38,11 +32,27 @@
       border-color: $pink;
     }
   }
+  .logout {
+    font-size: 14px;
+    &:hover {
+      color: $pink;
+      background-color: white;
+    }
+  }
   .cart {
+    font-size: 17px;
+    color: $pink;
+  }
+  .avatar {
+    font-size: 20px;
     color: $pink;
   }
 }
 
-.navbar .navbar-nav .dropdown-link {
-  font-size: 14px;
+.navbar .nav-item .nav-link {
+  color: #242424;
+  &:hover {
+    color: $pink;
+    font-weight: lighter;
+  }
 }
