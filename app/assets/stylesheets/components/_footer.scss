@@ -1,0 +1,36 @@
+.footer {
+  background-color: #fcfdfd;
+  color: #0d0d0d;
+  margin-top: 20px;
+  height: 150px;
+  h3 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-element {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.footer-links {
+  .fab {
+    color: #0d0d0d;
+    padding-left: 24px;
+  }
+}
+
+.contactus-footer {
+  font-style: italic;
+  text-align: center;
+}
+
+.language-footer {
+  // padding-right: 60px;
+}
