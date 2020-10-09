@@ -4,169 +4,19 @@ body {
   background-color: white;
 }
 
-/* h1 {
+h1 {
   font-family: 'Roboto';
-  color: #C50058;
+  color: $pink;
   font-size: 50px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 25px;
 }
 
-// CONTAINER ONE
-
-.banner-one {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-
-.header-one {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  height: 100vh;
-  align-items: center;
-}
-
-.image-one {
-  position: absolute;
-  left: 50%;
-  img {
-    width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-  }
-}
-
-// CONTAINER TWO
-
-.container-two {
-  max-height: 70vh;
-}
-
-.banner-two {
-  display: flex;
-  width: 100%;
-  height: 70vh;
-  justify-content: space-between;
-}
-
-.header-two {
-  display: flex;
-  width: 50%;
-  height: 70vh;
-  align-items: center;
-}
-
-.image-two {
-  position: absolute;
-  right: 50%;
-  img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-  }
-}
-
-// CONTAINER THREE
-
-.container-three {
-  max-height: 70vh;
-  background-color: $pink;
-}
-
-.banner-three {
-  display: flex;
-  width: 100%;
-  height: 70vh;
-  justify-content: space-between;
-}
-
-.header-three {
-  display: flex;
-  width: 50%;
-  height: 70vh;
-  align-items: center;
-}
-
-.image-three {
-  position: absolute;
-  left: 50%;
-  img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-  }
-}
-
-// CONTAINER FOUR
-
-.container-four {
-  max-height: 70vh;
-}
-
-.banner-four {
-  display: flex;
-  width: 100%;
-  height: 70vh;
-  justify-content: space-between;
-}
-
-.header-four {
-  display: flex;
-  width: 50%;
-  height: 70vh;
-  align-items: center;
-}
-
-.image-four {
-  position: absolute;
-  right: 50%;
-  img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-  }
-}
-
-// CONTAINER FIVE
-
-.container-five {
-  height: 70vh;
-  background-color: $pink;
-}
-
-.banner-five {
-  display: flex;
-  width: 100%;
-  height: 70vh;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  flex-direction: column;
-  h1 {
-    color: white;
-  }
-}
-
-.submit {
-  display: flex;
-  .btn {
-    background-color: white;
-    color: $pink;
-    &:hover {
-      background-color: lightgray;
-      color: $pink;
-    }
-  }
-}
- */
-
 
 // BANNER ONE
 
- .logo {
+ .header-one {
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -181,5 +31,85 @@ body {
     max-height: 100vh;
     object-fit: cover;
     object-position: center 45%;
+  }
+}
+
+// BANNER TWO
+
+.header-two {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-two {
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+// BANNER THREE
+
+.header-three {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pink;
+}
+
+.image-three {
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+// BANNER FOUR
+
+.header-four {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-four {
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+// BANNER FIVE
+
+.banner-five {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  background-color: $pink;
+  h1 {
+    color: white;
+  }
+}
+
+.submit {
+  display: flex;
+  .btn {
+    background-color: white;
+    color: $pink;
+    &:hover {
+      background-color: lightgray;
+      color: $pink;
+    }
   }
 }
