@@ -4,7 +4,7 @@ body {
   background-color: white;
 }
 
-h1 {
+/* h1 {
   font-family: 'Roboto';
   color: #C50058;
   font-size: 50px;
@@ -159,5 +159,27 @@ h1 {
       background-color: lightgray;
       color: $pink;
     }
+  }
+}
+ */
+
+
+// BANNER ONE
+
+ .logo {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+  img {
+    object-fit: contain;
+  }
+}
+
+.image-one {
+  img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: center 45%;
   }
 }
