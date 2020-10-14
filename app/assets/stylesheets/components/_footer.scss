@@ -1,12 +1,12 @@
 .footer {
-  background-color: #fcfdfd;
-  color: #0d0d0d;
-  margin-top: 20px;
-  height: 150px;
-  h3 {
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
+  background-color: white;
+  color: $gray;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-title {
@@ -15,22 +15,18 @@
 
 .footer-element {
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-links {
   .fab {
-    color: #0d0d0d;
-    padding-left: 24px;
+    color: $gray;
   }
 }
 
 .contactus-footer {
   font-style: italic;
   text-align: center;
-}
-
-.language-footer {
-  // padding-right: 60px;
 }
