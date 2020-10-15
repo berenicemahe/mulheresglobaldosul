@@ -1,6 +1,5 @@
 class ProductsController < ApplicationController
 
-
   def edit
     @product = Product.find(params[:id])
   end
@@ -21,5 +20,4 @@ class ProductsController < ApplicationController
   def product_params
     params.require(:product).permit(:name, :gender, :description, :size, :type, :color, :price)
   end
-
 end
