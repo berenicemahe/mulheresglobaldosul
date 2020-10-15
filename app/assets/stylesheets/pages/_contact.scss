@@ -1,16 +1,20 @@
 .banner-content {
+  margin-top: -11%;
+  margin-bottom: -7%;
   height: 60vh;
-  justify-content: space-around;
-  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("contactus.jpg");
   background-size: cover;
   h1 {
+    font-family: "Oswald";
+    text-align: center;
     padding-top: 7%;
     font-size: 56px;
     font-weight: bold;
     color: $pink;
   }
   p {
+    font-family: "Oswald";
+    text-align: center;
     color: white;
     margin-top: -10px;
   }
@@ -23,6 +27,7 @@
 
 .perguntas-frequentes {
   h1 {
+    font-family: "Oswald";
     font-weight: bold;
     color: $pink;
   }
@@ -33,6 +38,7 @@
 
 .contact-form {
   h1 {
+    font-family: "Oswald";
     font-weight: bold;
     color: $pink;
   }
