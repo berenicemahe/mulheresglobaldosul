@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   get 'contacts/new'
   # post 'contacts/create'
   # get 'contacts/create'
