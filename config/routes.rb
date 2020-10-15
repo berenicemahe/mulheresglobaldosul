@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :products only: [:edit, :update]
+  resources :products, only: [:edit, :update]
   get 'contacts/new'
 
   get 'messages/new'
