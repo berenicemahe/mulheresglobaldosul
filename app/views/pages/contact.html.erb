@@ -38,7 +38,12 @@
 
     <div class="contact-form col-5">
       <h1 >Fale com a gente!</h1>
-      <%= render 'pages/form' %>
+      <form action="https://formspree.io/f/mdopejwy" method="POST" class="contact-holders">
+        <input type="email" name="_replyto" placeholder="email address">
+        <input type="name" name="name" placeholder="Full name">
+        <input type="text" name="subject" placeholder="How can we help you?">
+        <input type="submit" value="Send" class="btn btn-info cadastrar">
+      </form>
     </div>
   </div>
 </div>
