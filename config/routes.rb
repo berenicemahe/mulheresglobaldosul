@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :products, only: [:edit, :update]
+  resources :product_carts, only: [:index, :create]
   get 'contacts/new'
 
   get 'messages/new'
