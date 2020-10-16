@@ -2,9 +2,9 @@ class Product < ApplicationRecord
 
   has_many: carts, through: product_carts,
 
-  TYPE = ["accessoriós", "bermudas e shorts", "blusas e camisetas", "blusões e suéteres",
+  TYPE = ["accessórios", "bermudas e shorts", "blusas e camisetas", "blusões e suéteres",
     "bolsas", "calças", "camisas", "casacos e jaquetas", "esportivo", "moda praia", "saia", "vestido e macacões"]
-  COLOR = ["amarelho", "azul", "bege", "branco", "cinza", "dourado", "laranja", "marrom", "multicores", "preto",
+  COLOR = ["amarelo", "azul", "bege", "branco", "cinza", "dourado", "laranja", "marrom", "multicores", "preto",
     "rosa", "roxo", "verde", "vermelho"]
   GENDER = ["femino", "masculino"]
   SIZE = ["PP", "P", "M", "G", "GG"]
