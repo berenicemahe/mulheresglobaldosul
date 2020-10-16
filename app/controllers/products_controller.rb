@@ -1,4 +1,15 @@
 class ProductsController < ApplicationController
+  def index
+  end
+
+  def show
+  end
+
+  def new
+  end
+
+  def create
+  end
 
   def edit
     @product = Product.find(params[:id])
@@ -14,6 +25,8 @@ class ProductsController < ApplicationController
     end
   end
 
+  def destroy
+  end
 
   private
 
