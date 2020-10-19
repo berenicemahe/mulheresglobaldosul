@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  
   belongs_to :cart
 
   # TYPE = ["accessórios", "bermudas e shorts", "blusas e camisetas", "blusões e suéteres",
@@ -13,5 +14,5 @@ class Product < ApplicationRecord
   validates :color, inclusion: { in: COLOR}
   validates :size, inclusion: { in: SIZE }
   validates :gender, inclusion: { in: GENDER }
-
+  
 end
