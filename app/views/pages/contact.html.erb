@@ -1,16 +1,16 @@
 <div>
   <div class="banner">
     <div class="banner-content text-center">
-      <h1 class="mb-5">Contato</h1>
+      <h1 class="mb-5">CONTATO</h1>
       <p>NOSSO ESCRITÓRIO</p>
       <p>Ladeira da Glória 26 Nex Coworking - Bloco 3</p>
       <p>Rio de Janeiro, RJ, 22211-120 Brasil</p>
     </div>
   </div>
 
-  <div class="container-contact col-12 mt-5 d-flex text-center">
+  <div class="container-contact col-12 d-flex text-center">
     <div class="perguntas-frequentes col-5">
-      <h1>Perguntas Frequentes</h1>
+      <h1 class="pb-3">Perguntas Frequentes</h1>
       <h4 class="mt-4">O MULHERES DO SUL GLOBAL É UMA ONG?</h4>
       <p align="justify">Não! Somos um negócio social, ou seja, temos como missão desenvolver
       e/ou transformar socialmente nossa realidade, gerando impacto positivo
@@ -38,7 +38,12 @@
 
     <div class="contact-form col-5">
       <h1 >Fale com a gente!</h1>
-      <%= render 'pages/form' %>
+      <form action="https://formspree.io/f/mdopejwy" method="POST" class="contact-holders">
+        <input type="email" name="_replyto" placeholder="email address">
+        <input type="name" name="name" placeholder="Full name">
+        <input type="text" name="subject" placeholder="How can we help you?">
+        <input type="submit" value="Send" class="btn btn-info cadastrar">
+      </form>
     </div>
   </div>
 </div>

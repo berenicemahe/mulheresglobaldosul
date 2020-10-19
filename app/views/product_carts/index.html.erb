@@ -1,0 +1,14 @@
+<div class = container>
+  <h1>products carts index</h1>
+
+  <ul>
+    <% @product_carts.each do |product_cart| %>
+      <li>
+        <%= link_to product_cart.product_id, product_path(product.id)  %>
+        <%= link_to product_cart.cart_id, cart_path(cart.id)  %>
+      </li>
+    <% end %>
+  </ul>
+
+ 
+</div>
