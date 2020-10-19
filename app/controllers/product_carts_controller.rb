@@ -4,7 +4,6 @@ class ProductCartsController < ApplicationController
   end
 
   
- 
   private
 
   def select_produtc_cart
