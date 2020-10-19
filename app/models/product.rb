@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  belongs_to :cart, through: :product_cart
+  belongs_to :cart
 
   TYPE = ["accessórios", "bermudas e shorts", "blusas e camisetas", "blusões e suéteres",
     "bolsas", "calças", "camisas", "casacos e jaquetas", "esportivo", "moda praia", "saia", "vestido e macacões"]
