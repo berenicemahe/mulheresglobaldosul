@@ -24,11 +24,6 @@ ActiveRecord::Schema.define(version: 2020_10_19_183102) do
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
-  create_table "contacts", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "product_carts", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.bigint "cart_id", null: false
