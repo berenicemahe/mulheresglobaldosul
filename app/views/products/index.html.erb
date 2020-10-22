@@ -1,9 +1,8 @@
-
-
-
-<h1>Hello!!!!</h1>
-
-
-<% @products.each do |product| %>
-  <h1><%= "#{@products.name} aaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbb" %></h1>
-<% end %>
+<div class="card-deck">
+  <% @products.each do |product| %>
+  <div class="row card-img-top col-md-3" >
+    <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
+    <p><%= "#{product.name}" %></p>
+  </div>
+  <% end %>
+</div>

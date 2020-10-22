@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
 
-  belongs_to :cart
+  has_one_attached :photo
 
   CATEGORY = ["accessórios", "bermudas e shorts", "blusas e camisetas", "blusões e suéteres",
     "bolsas", "calças", "camisas", "casacos e jaquetas", "esportivo", "moda praia", "saias", "vestidos e macacões"]
