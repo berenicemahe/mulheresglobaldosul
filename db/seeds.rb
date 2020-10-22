@@ -6,7 +6,7 @@ OpenURI::Buffer.const_set 'StringMax', 0
 
 dressone = Product.create!(name: "Pink dress", description: "A flowery pink dress, perfect for the summer coming", gender: "femino",
                         size: "M", category: "vestidos e macacões", color: "rosa", price: 60)
-url = 'https://images.unsplash.com/photo-1482270406631-a02c51d93c2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=962&q=80'
+url = 'https://i.imgur.com/JjLhp8X.jpg'
 filename = File.basename(URI.parse(url).path)
 file = URI.open(url)
 dressone.photo.attach(io: file, filename: filename)

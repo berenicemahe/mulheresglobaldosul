@@ -37,13 +37,31 @@
     </div>
 
     <div class="contact-form col-5">
-      <h1 >Fale com a gente!</h1>
-      <form action="https://formspree.io/f/mdopejwy" method="POST" class="contact-holders">
+
+      <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+      <script>
+        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+        formbutton("create", {
+          styles: {fontFamily:'"Oswald", sans-serif', description: {background: "#c73858"}, button: {background: "#c73858"}, title: {background: "#c73858", letterSpacing: "0.05em", textTransform: "uppercase"}},
+          title: "Fala com a gente!",
+          description: "Vamos respondir em breve",
+          action: "https://formspree.io/f/mdopejwy",
+          fields: [
+          {name: "name", type: "text", label: "Nome completo", required: true,},
+          {name: "email", type: "email", label: "Seu email", required: true},
+          {name: "Message", label: "Mensagem", type: "textarea"},
+          {type: "submit"}
+          ],
+        });
+      </script>
+<!--       <form action="https://formspree.io/f/mdopejwy" method="POST" class="contact-holders">
         <input type="email" name="_replyto" placeholder="email address">
         <input type="name" name="name" placeholder="Full name">
-        <input type="text" name="subject" placeholder="How can we help you?">
+        <input type="textarea" name="subject" class="text-form" placeholder="How can we help you?">
         <input type="submit" value="Send" class="btn btn-info cadastrar">
-      </form>
-    </div>
+      </form> -->
+
   </div>
 </div>
+
+
