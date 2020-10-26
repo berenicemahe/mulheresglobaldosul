@@ -1,9 +1,10 @@
 .banner-content {
   margin-top: -11%;
-  margin-bottom: -7%;
+  margin-bottom: -6%;
   height: 60vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("contactus.jpg");
   background-size: cover;
+  background-position: 50% 15%;
   h1 {
     font-family: "Oswald";
     text-align: center;
@@ -33,19 +34,33 @@
   }
   h4 {
     color: $pink;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-family: "Open Sans";
   }
 }
 
-.contact-form {
-  h1 {
-    font-family: "Oswald";
-    font-weight: bold;
-    color: $pink;
-  }
-}
+// .formbutton {
+//   .button: {
+//     background: $pink;
+//   },
+// }
 
-.contact-holders {
-  font-family: "Oswald";
-  text-align: center;
-  // display: flex;
-}
+// .contact-form {
+//   h1 {
+//     // display: flex;
+//     font-family: "Oswald";
+//     font-weight: bold;
+//     color: $pink;
+//   }
+// }
+
+// .contact-holders {
+//   text-align: center;
+// }
+
+// .text-form {
+//   height: 20vh;
+// }

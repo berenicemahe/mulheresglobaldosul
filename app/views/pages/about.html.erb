@@ -1,3 +1,6 @@
+
+<%= provide(:turbolinks_cache, 'no-cache') %>
+
 <head>
   <script src= "http://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -5,62 +8,136 @@
 </head>
 
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.imgur.com/uDaLtXL.png);">
-  <div class="container">
-    <!--<h1>Empoderando mulheres refugiadas através do ofício</h1>-->
+
+
+
+<div class="banner-about">
+  <div class="banner-about-content text-center">
+    <h1 class="mb-5">NOSSA HISTORIA</h1>
   </div>
 </div>
-<div class=container>
-  <div class="row justify-content-center col-12 col-lg-12">
-  
-    <h1><strong>Quem somos</strong></h1>
-  </div>
-  <div class='negocio-social row justify-content col-12 col-lg-12'>
-    <h2>O negócio social</h2>
-    <p>Mulheres do Sul Global é um negócio social de empoderamento econômico de mulheres refugiadas,
-     inseridas em contextos de refúgio e vulnerabilidade social, baseado da promoção do empreendedorismo, 
-     capacitação de habilidades, criação e venda de peças de costura comprometidos com os novos paradigmas 
-     de se fazer e consumir sustentável.
-    <p>Nossa missão é promover o empoderamento econômico de mulheres refugiadas através do ofício da costura,
-    com o desenvolvimento de jornadas empreendedoras e redes de trabalho com valorização das identidades e 
-    conexões entre culturas.</p>
-    
-    <%= link_to 'Saiba mais sobre nossa história', historia_path %>
-  </div>
-  
+  <div class='container'>
+    <div class='col-sm-12 col-md-12 six-column'>
+      <h2 style='text-align: left; margin-top: 60px;'> Como começamos </h2>
+      <p style="text-align: justify;">
+      A semente do Mulheres do Sul Global surge em uma viagem de voluntariado à Índia em 2015/2016. Para Emanuela,
+      nossa fundadora, a motivação para a viagem era um projeto pessoal antigo, com o propósito de realizar uma peregrinação
+      pelos lugares sagrados do budismo. Foi como voluntária, coordenando projetos nas fundações <i>The Light of Budhadharma
+      Foundation</i> e <i>Sarnath International Institute</i>, ambas no norte da Índia, que Emanuela percorreu diversas cidades, viajando
+      por terra, e vivenciando a rotina dos vilarejos mais pobres e violentos do país. O retrato da Índia como um centro de
+      espiritualidade vai se transformando em um cenário avassalador, com uma indústria a céu aberto, mulheres costurando na
+      beira das estradas, deixando seus filhos ainda bebês, pelados, engatinhando livremente onde carros passavam em alta
+      velocidade e os faziam desaparecer em meio a poeira. Foram muitas as experiências diretas com a precariedade do <i> modus
+      operandi</i> têxtil e a vulnerabilidade destas mulheres perante ao único ofício que sabem desempenhar.</p>
+    </div>
+
+        <div class="row no-gutters" style='margin-top: 30px; margin-bottom: 30px'>
+          <div class="col-xs-12 col-md-5">
+            <div class="historia-image-one">
+              <%= image_tag("https://i.imgur.com/JjLhp8X.jpg")%>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-7">
+            <div class="historia-header-one" style='margin-left: 30px'>
+              <p style="text-align: justify;"><i>"Lembro que já no primeiro mês da minha chegada, senti uma firme determinação em desenvolver um trabalho que envolvesse
+          mulheres e costura. Mas era um imenso desafio, uma vez que eu não sabia muito bem por onde começar já que em toda a minha
+          experiência profissional eu tive zero experiência com o mercado têxtil"</i>, relembra Emanuela.</p>
+    <!--           <strong>A Índia e o ateliê Sarnath Design </strong> -->
+    <!--           <p>Na segunda metade da jornada, como residente no monastério <i>Sarnath Internacional Institute</i>, Emanuela ganhou a missão de
+              coordenar as atividades administrativas do ateliê de costura <i>Sarnath Design</i>. Foi a partir da observação direta do
+              funcionamento de um ateliê que se foi elaborando uma ideia de projeto que pudesse <strong>empoderar mulheres através do seu
+              ofício</strong> e como, através da costura, se poderia trabalhar tantas outras questões fundamentais sobre a condição da mulher
+              num país como a Índia. <p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class='col-sm-12 col-md-12 six-column'>
+          <h5 style='text-align: left; margin-top: 60px;'> A Índia e o ateliê Sarnath Design </h5>
+          <p style='text-align: justify'>Na segunda metade da jornada, como residente no monastério <i>Sarnath Internacional Institute</i>, Emanuela ganhou a missão de
+          coordenar as atividades administrativas do ateliê de costura <i>Sarnath Design</i>. Foi a partir da observação direta do
+          funcionamento de um ateliê que se foi elaborando uma ideia de projeto que pudesse <strong>empoderar mulheres através do seu
+          ofício</strong> e como, através da costura, se poderia trabalhar tantas outras questões fundamentais sobre a condição da mulher
+          num país como a Índia.</p>
+        </div>
+
+
+        <h2 style='text-align: left; margin-top: 60px;'> De volta ao Rio de Janeiro: o (RE) encontro com mulheres, refúgio e costura </h2>
+        <div class="row no-gutters" style='margin-top: 50px;'>
+          <div class="col-xs-12 col-md-7">
+            <div class="historia-header-two">
+              <p style='text-align: justify;'>
+              Na volta para casa, depois da profunda imersão em terras estrangeiras, o plano era de estruturar minimamente
+              meios para poder voltar à Índia e amadurecer um projeto por lá. No embalo de um novo engajamento com voluntariado,
+              motivada por um  curso numa escola livre de cinema documentário, surgiu a <strong> Cáritas RJ </strong>, organização que
+              faz a acolhida dos refugiados. Foi  lá que se desenhou um caminho por onde começar.
+              Durante o desenvolvimento de um projeto audiovisual assinado por quatro diretoras amigas, Emanuela conheceu mulheres em
+              situação de refúgio vindas de diversos países. Ao ligar a câmera para filmar as entrevistas, chamava a atenção o fato de
+              mulheres vindas do Congo e da Angola pedirem máquinas de costura para poderem trabalhar.
+              Ao investigar os pedidos recorrentes, descobriu-se que, em algumas regiões do Congo, as mulheres aprendem o ofício da
+              costura ainda jovens em suas escolas e que, mesmo com a costura em seu currículo profissional, a dificuldade de encontrar
+              trabalhos em fábricas aqui no Brasil era imensa. Essa descoberta foi a oportunidade de realizar o propósito de trabalhar
+              com mulheres e costura.</p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5">
+            <div class="historia-image-two">
+              <%= image_tag("image-three.jpeg")%>
+            </div>
+          </div>
+        </div>
+
+        <div class='row fifith' style='margin-top: 50px;'>
+          <div class='col-sm-12 col-md-12 twelve-column'>
+            <h2 style='text-align: justify'>Quando o propósito e oportunidade se unem: nasce o Mulheres do Sul Global</h2>
+            <p style="text-align: justify;">O passo seguinte ao terminar o projeto audiovisual foi fazer a inscrição de um projeto sobre mulheres e costura no
+            programa Shell Iniciativa Jovem, uma incubadora de projetos que acelera uma ideia até sua lapidação em um plano de
+            negócios. Depois de uma sabatina de pitchs e dinâmicas onde o projeto foi aprovado no programa,  Emanuela volta à
+            instituição Cáritas RJ para uma aproximação com o grupo das congolesas costureiras.
+            Isso acontece justo no momento em que a Cáritas estava rodando o piloto do programa CORES - Coletivo de Refugiados
+            Empreendedores -, em que dois grupos profissionais estavam sendo incubados no programa de empreendedorismo: um grupo
+            da  gastronomia e outro da costura. Foi então que a partir das vivências e dos desafios reais do grupo de angolanas e
+            congolesas costureiras do programa CORES, em paralelo com o desenvolvimento de uma jornada empreendedora no programa
+            Shell Iniciativa Jovem, aconteceu a transição de uma ideia a um negócio social, batizado desde sua origem como Mulheres
+            do Sul Global.</p>
+          </div>
+        </div>
+
   <h2 style="margin-top: 5%";>Nosso time</h2>
-  
+
   <div class="slider owl-carousel">
     <div class="card">
       <div class='img'><%= cl_image_tag("pnkq9j6kvnff5zl8fd2k") %>
-      
+
       </div>
       <div class="content">
         <div class="title">Emanuela Pinheiro</div>
         <div class="subtitle"><p>Nossa fundadora</p></div>
       </div>
-    </div>   
+    </div>
     <div class="card">
       <div class='img'><img src="https://i.imgur.com/PgHZKKN.jpg"></div>
       <div class="content">
         <div class="title">Thays</div>
         <div class="subtitle"><p>Breve descrição</p></div>
       </div>
-    </div>   
+    </div>
     <div class="card">
       <div class='img'><img src="https://i.imgur.com/s9KviVQ.jpg"></div>
       <div class="content">
         <div class="title">Ana Luiza</div>
         <div class="subtitle"><p>Breve descrição</p></div>
       </div>
-    </div>   
+    </div>
     <div class="card">
       <div class='img'><img src="https://i.imgur.com/5sEgcEj.jpg"></div>
       <div class="content">
         <div class="title">Claudia Lima</div>
         <div class="subtitle"><p>Breve descrição</p></div>
       </div>
-    </div>   
+    </div>
     <div class="card">
       <div class='img'><img src="https://i.imgur.com/61IOnyl.jpg"></div>
       <div class="content">
@@ -88,42 +165,51 @@
         <div class="title">Luiz</div>
         <div class="subtitle"><p>Breve descrição</p></div>
       </div>
-    </div> 
+    </div>
      <div class="card">
       <div class='img'><img src="https://i.imgur.com/1wQislQ.jpg"></div>
       <div class="content">
         <div class="title">Robson Rastrelli</div>
         <div class="subtitle"><p>Breve descrição</p></div>
       </div>
-    </div>                     
+    </div>
 
   </div>
   <script>
-      $(".slider").owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000, //2000ms = 2s;
-        autoplayHoverPause: true,
-      });
-    </script>
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
+    $(".slider").owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000, //2000ms = 2s;
+      autoplayHoverPause: true,
+    });
+  </script>
 </div>
 
 
+
+<!-- PREVIOUS TEXT : -->
+
+<!-- <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.imgur.com/uDaLtXL.png);">
+  <div class="container"> -->
+    <!--<h1>Empoderando mulheres refugiadas através do ofício</h1>-->
+<!--   </div>
+</div> -->
+<!-- <div class=container>
+  <div class="row justify-content-center col-12 col-lg-12">
+
+
+  </div>
+  <div class='negocio-social row justify-content col-12 col-lg-12'>
+    <h2>O negócio social</h2>
+    <p>Mulheres do Sul Global é um negócio social de empoderamento econômico de mulheres refugiadas,
+     inseridas em contextos de refúgio e vulnerabilidade social, baseado da promoção do empreendedorismo,
+     capacitação de habilidades, criação e venda de peças de costura comprometidos com os novos paradigmas
+     de se fazer e consumir sustentável.
+    <p>Nossa missão é promover o empoderamento econômico de mulheres refugiadas através do ofício da costura,
+    com o desenvolvimento de jornadas empreendedoras e redes de trabalho com valorização das identidades e
+    conexões entre culturas.</p>
+
+    <%= link_to 'Saiba mais sobre nossa história', historia_path %>
+  </div> -->
 
 
