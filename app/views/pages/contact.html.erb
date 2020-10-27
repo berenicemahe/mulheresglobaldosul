@@ -1,16 +1,16 @@
 <div>
   <div class="banner">
     <div class="banner-content text-center">
-      <h1 class="mb-5">Contato</h1>
+      <h1 class="mb-5">CONTATO</h1>
       <p>NOSSO ESCRITÓRIO</p>
       <p>Ladeira da Glória 26 Nex Coworking - Bloco 3</p>
       <p>Rio de Janeiro, RJ, 22211-120 Brasil</p>
     </div>
   </div>
 
-  <div class="container-contact col-12 mt-5 d-flex text-center">
+  <div class="container-contact col-12 d-flex text-center">
     <div class="perguntas-frequentes col-5">
-      <h1>Perguntas Frequentes</h1>
+      <h1 class="pb-3">Perguntas Frequentes</h1>
       <h4 class="mt-4">O MULHERES DO SUL GLOBAL É UMA ONG?</h4>
       <p align="justify">Não! Somos um negócio social, ou seja, temos como missão desenvolver
       e/ou transformar socialmente nossa realidade, gerando impacto positivo
@@ -35,10 +35,25 @@
         frequentemente presentes em feiras e eventos que são previamente divulgados
         em nossa página.</p>
     </div>
-
-    <div class="contact-form col-5">
-      <h1 >Fale com a gente!</h1>
-      <%= render 'pages/form' %>
-    </div>
   </div>
+
+      <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+      <script>
+        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+        formbutton("create", {
+          styles: {fontFamily:'"Oswald", sans-serif', description: {background: "#c73858"}, button: {background: "#c73858"}, title: {background: "#c73858", letterSpacing: "0.05em", textTransform: "uppercase"}},
+          title: "Fala com a gente!",
+          description: "A gente irá te retornar em breve.",
+          action: "https://formspree.io/f/mdopejwy",
+          fields: [
+          {name: "name", type: "text", label: "Nome completo", required: true,},
+          {name: "email", type: "email", label: "Seu email", required: true},
+          {name: "Message", label: "Mensagem", type: "textarea"},
+          {type: "submit"}
+          ],
+        });
+      </script>
 </div>
+
+
+

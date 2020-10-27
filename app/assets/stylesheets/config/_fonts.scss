@@ -1,10 +1,15 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "sans-serif";
+$body-font: "Libre Franklin", "sans-serif";
 $headers-font: "Oswald", "sans-serif";
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
