@@ -1,0 +1,21 @@
+.helpusbutton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.helpusbtn {
+  font-size: 20px;
+  display: block;
+  height: 10vh;
+  font-family: 'Oswald';
+  &:hover {
+    color: $pink;
+    background-color: white;
+    border-color: $pink;
+  }
+}
+
+.or-text {
+  text-align: center;
+}
