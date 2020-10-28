@@ -15,4 +15,23 @@ class Product < ApplicationRecord
   validates :size, inclusion: { in: SIZE }
   validates :gender, inclusion: { in: GENDER }
 
+  def is_product_in_cart?(user)
+    cart = user.carts.find_by(status: false)
+
+    if cart
+      ProductCart.find_by(cart: cart, product: self).present?
+    else
+      false
+    end
+  end
+
+  def cart_product(user)
+    cart = user.carts.find_by(status: false)
+
+    if cart
+      ProductCart.find_by(cart: cart, product: self)
+    else
+      nil
+    end
+  end
 end

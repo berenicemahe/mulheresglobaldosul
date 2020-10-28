@@ -1,8 +1,14 @@
 <div class="card-deck">
   <% @products.each do |product| %>
-  <div class="row card-img-top col-md-3" >
-    <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
-    <p><%= "#{product.name}" %></p>
-  </div>
+    <div class="row card-img-top col-md-3" >
+      <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
+      <p><%= "#{product.name}" %></p>
+
+      <% if product.is_product_in_cart?(current_user) %>
+        <%= link_to "Remove from Cart", product_cart_path(product.cart_product(current_user)), method: :delete, class: "btn btn-danger" %>
+      <% else %>
+        <%= link_to "Add to cart", product_carts_path(product_id: product.id), method: :post, class: "btn btn-primary" %>
+      <% end %>
+    </div>
   <% end %>
 </div>

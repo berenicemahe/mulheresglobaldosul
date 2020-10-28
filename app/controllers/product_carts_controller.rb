@@ -1,13 +1,25 @@
 class ProductCartsController < ApplicationController
-  def index
-    @product_carts = ProductCart.all
+  def create
+    cart = current_user.carts.find_or_create_by(
+      status: false
+    )
+
+    @product = Product.find(params[:product_id])
+
+    @product_cart = ProductCart.new
+    @product_cart.cart = cart
+    @product_cart.product = @product
+
+    if @product_cart.save
+      redirect_to products_path
+    end
   end
 
-  private
+  def destroy
+    product_cart = ProductCart.find(params[:id])
+    @product = product_cart.product
+    product_cart.destroy
 
-  def select_produtc_cart
-    @product_cart = ProductCart.select(current_user)
+    redirect_to products_path
   end
-
-
 end
