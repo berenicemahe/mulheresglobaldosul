@@ -29,7 +29,7 @@
     
     <% if user_signed_in? %>
       <div class="nav-item d-flex align-items-center">
-        <a class="cart mr-3" href="#" role="button"><i class="fas fa-shopping-cart"></i></a>
+        <a class="cart mr-3" href="/carts" role="button"><i class="fas fa-shopping-cart"></i></a>
         <a class="avatar" href="#" role="button"><i class="fas fa-user-circle" data-toggle="dropdown"></i></a>
         <%= link_to "SAIR", destroy_user_session_path, method: :delete, class: "btn btn-outline-info logout", data: { confirm: "Você quer mesmo desconectar?" } %>
       </div>
