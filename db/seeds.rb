@@ -34,6 +34,10 @@ berenicemahe = User.create(email: "berenice.mahe@gmail.com", password: "bonjour"
 
 renatagrassi =  User.create(email: "renatagrassi@gmail.com", password: "123456")
 
+manu = User.create(email: "manu@gmail.com", password: "123456", admin: true)
+
+
+
 puts "Usuários criados!"
 
 

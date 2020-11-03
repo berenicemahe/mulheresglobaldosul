@@ -19,6 +19,8 @@ class ProductPolicy < ApplicationPolicy
   def destroy?
   end
   
+  private
+
   def is_owner?
     record.user == user
   end
