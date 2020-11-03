@@ -9,11 +9,7 @@
       <% if policy(product).show? %>
         <%= link_to 'Detalhes', product %>
       <% end %>
-      
-      <% if policy(product).update? %>
-        <%= link_to 'Editar', edit_product_path(product) %>
-      <% end %>
-      
+           
       <% if policy(product).destroy? %>
         <%= link_to 'Deletar', product, method: :delete, data: { confirm: 'Are you sure?' } %>
       <% end %>
@@ -22,9 +18,9 @@
 </div>
 
 <div class='btn-shw-company'>
-<% if policy(Product).create? %>
-  <%= link_to 'Adicionar novo produto', new_product_path, :class => "btn btn-primary mb-5 mr-3" %>
-<% end %>
+  <% if policy(Product).create? %>
+    <%= link_to 'Adicionar novo produto', new_product_path, :class => "btn btn-primary mb-5 mr-3" %>
+  <% end %>
   
 </div>
 <br>
