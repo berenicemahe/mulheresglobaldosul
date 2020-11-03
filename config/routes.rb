@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get '/equipe', to:'pages#equipe'
   get '/helpus', to: 'pages#helpus'
   get '/faq', to: 'pages#faq'
+  get 'letterfromthefounder', to: 'pages#letterfromthefounder'
 end

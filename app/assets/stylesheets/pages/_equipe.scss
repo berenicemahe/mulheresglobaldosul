@@ -17,6 +17,28 @@
   }
 }
 
-.title-equipe {
+// .equipe-completa {
+//  display: flex;
+//  justify-content: space-around;
+// }
 
+.equipe-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row-equipe {
+  margin: 0 -10px;
+}
+
+.row-equipe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.equipe-card {
+  padding: 16px;
+  text-align: center;
 }
