@@ -45,6 +45,15 @@ ActiveRecord::Schema.define(version: 2020_10_28_171421) do
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
+  create_table "offices", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.float "latitude"
+    t.float "longitude"
+  end
+
   create_table "product_carts", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.bigint "cart_id", null: false

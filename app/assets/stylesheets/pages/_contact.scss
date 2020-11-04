@@ -21,46 +21,15 @@
   }
 }
 
-.container-contact {
-  justify-content: space-around;
-  align-items: center;
-}
 
-.perguntas-frequentes {
-  h1 {
-    font-family: "Oswald";
-    font-weight: bold;
-    color: $pink;
-  }
-  h4 {
-    color: $pink;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-  p {
-    font-family: "Open Sans";
-  }
-}
-
-// .formbutton {
-//   .button: {
-//     background: $pink;
-//   },
+// .contato {
+//   justify-content: space-between;
+//   align-items: center;
 // }
 
-// .contact-form {
-//   h1 {
-//     // display: flex;
-//     font-family: "Oswald";
-//     font-weight: bold;
-//     color: $pink;
-//   }
+// .container-contact {
+//   justify-content: space-around;
+//   align-items: center;
 // }
 
-// .contact-holders {
-//   text-align: center;
-// }
 
-// .text-form {
-//   height: 20vh;
-// }

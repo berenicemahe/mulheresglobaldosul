@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
-  get '/historia', to:'pages#historia'
+  get '/equipe', to:'pages#equipe'
   get '/helpus', to: 'pages#helpus'
+  get '/faq', to: 'pages#faq'
+  get 'letterfromthefounder', to: 'pages#letterfromthefounder'
 end

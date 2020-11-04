@@ -1,0 +1,44 @@
+.historia-image-one {
+  img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+
+.container-equipe {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.historia-header-one {
+  h4, h6 {
+    color: $pink;
+  }
+}
+
+// .equipe-completa {
+//  display: flex;
+//  justify-content: space-around;
+// }
+
+.equipe-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row-equipe {
+  margin: 0 -10px;
+}
+
+.row-equipe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.equipe-card {
+  padding: 16px;
+  text-align: center;
+}
