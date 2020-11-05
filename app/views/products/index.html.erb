@@ -10,9 +10,6 @@
         <%= link_to 'Detalhes', product %>
       <% end %>
            
-      <% if policy(product).destroy? %>
-        <%= link_to 'Deletar', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <% end %>
   </div>
   <% end %>
 </div>
