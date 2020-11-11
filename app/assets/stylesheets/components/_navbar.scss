@@ -1,5 +1,6 @@
 .navbar {
   background: white;
+  display: flex;
 }
 
 .navbar .navbar-icon img {
@@ -8,7 +9,7 @@
 }
 
 .navbar .nav-item {
-  font-size: 14px;
+  font-size: 13px;
   .donate {
     color: $pink !important;
     &:hover {
@@ -17,26 +18,29 @@
     }
   }
   .login {
-    font-size: 14px;
+    font-size: 13px;
     &:hover {
       color: $pink;
       background-color: white;
       border-color: $pink;
+      font-weight: 400 !important;
     }
   }
   .signup {
-    font-size: 14px;
+    font-size: 13px;
     &:hover {
       color: white;
       background-color: $pink;
       border-color: $pink;
+      font-weight: 400 !important;
     }
   }
   .logout {
-    font-size: 14px;
+    font-size: 13px;
     &:hover {
       color: $pink;
       background-color: white;
+      font-weight: 400 !important;
     }
   }
   .cart {
