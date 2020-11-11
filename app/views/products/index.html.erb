@@ -1,27 +1,42 @@
-<div class="card-deck">
-  <% @products.each do |product| %>
-  <div class="row card-img-top col-md-3" >
-    <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
-    <p><%= "#{product.name}" %></p>
-    <p><%= product.description %></p>
-    <p><%= product.price %></p>
-    
-      <% if policy(product).show? %>
-        <%= link_to 'Detalhes', product %>
-      <% end %>
-           
-      <% if policy(product).destroy? %>
-        <%= link_to 'Deletar', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <% end %>
-  </div>
-  <% end %>
-</div>
+<body>
 
-<div class='btn-shw-company'>
-  <% if policy(Product).create? %>
-    <%= link_to 'Adicionar novo produto', new_product_path, :class => "btn btn-primary mb-5 mr-3" %>
-  <% end %>
+ <!--  <input type="checkbox" id="check"> --> 
+  <!--<label id="icone" for="check"><%= image_tag("icone.png")%> --> 
   
-</div>
-<br>
-<%# console %>
+
+  <div class="barra">
+  <nav>
+  <a href=""><div class="link">Acessórios</div></a>
+  <a href=""><div class="link">Bolsas</div></a>
+  <a href=""><div class="link">Roupas Femininas</div></a>
+  <a href=""><div class="link">Roupas Masculinas</div></a>
+  
+  </nav>
+
+  </div>
+
+
+
+
+
+  <div class="card-deck">
+    <% @products.each do |product| %>
+    <div class="row card-img-top col-md-3" >
+      <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
+      <p><%= "#{product.name}" %></p>
+      <p><%= product.description %></p>
+      <p><%= product.price %></p>
+      
+        <% if policy(product).show? %>
+          <%= link_to 'Detalhes', product %>
+        <% end %>
+    </div>
+    <% end %>
+  </div>
+
+  <div class='btn-shw-company'>
+    <% if policy(Product).create? %>
+      <%= link_to 'Adicionar novo produto', new_product_path, :class => "btn btn-primary mb-5 mr-3" %>
+    <% end %>
+  </div>
+</body>
