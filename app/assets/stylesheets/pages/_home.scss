@@ -40,6 +40,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $pink;
 }
 
 .image-two {
@@ -57,7 +58,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $pink;
+  background-color: white;
 }
 
 .image-three {
@@ -75,6 +76,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $pink;
 }
 
 .image-four {
@@ -90,25 +92,47 @@ h1 {
 .banner-five {
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $pink;
   flex-direction: column;
-  background-color: $pink;
-  h1 {
-    color: white;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
+  h5 {
+    margin: 0px;
+    color: $gray;
+  }
+  p {
+    margin: 0px;
   }
 }
 
-.submit {
+.paragraph-five {
+  width: 600px;
+  text-align: justify;
+  line-height: 2;
+  color: $gray;
+}
+
+.founder-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
+}
+
+.founder-avatar p {
+  color: $gray;
+}
+
+.founder-avatar {
   display: flex;
-  .btn {
-    background-color: white;
-    color: $pink;
-    &:hover {
-      background-color: lightgray;
-      color: $pink;
-    }
-  }
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 600px;
 }
