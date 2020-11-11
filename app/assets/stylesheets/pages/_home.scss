@@ -51,6 +51,15 @@ h1 {
   }
 }
 
+.paragraph-two {
+  width: 400px;
+  text-align: justify;
+  p {
+    line-height: 2;
+    margin: 0px;
+  }
+}
+
 // BANNER THREE
 
 .header-three {
@@ -69,6 +78,15 @@ h1 {
   }
 }
 
+.paragraph-three {
+  width: 400px;
+  text-align: justify;
+  p {
+    line-height: 2;
+    margin: 0px;
+  }
+}
+
 // BANNER FOUR
 
 .header-four {
@@ -84,6 +102,15 @@ h1 {
     width: 100%;
     height: 70vh;
     object-fit: cover;
+  }
+}
+
+.paragraph-four {
+  width: 400px;
+  text-align: justify;
+  p {
+    line-height: 2;
+    margin: 0px;
   }
 }
 
