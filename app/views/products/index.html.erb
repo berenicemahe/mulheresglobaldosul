@@ -23,7 +23,7 @@
       <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
       <p><%= "#{product.name}" %></p>
       <p><%= product.description %></p>
-      <p><%= product.price %></p>
+      <p><%= "R$ #{product.price}" %></p>
       
         <% if policy(product).show? %>
           <%= link_to 'Detalhes', product %>
