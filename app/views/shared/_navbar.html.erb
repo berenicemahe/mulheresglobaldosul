@@ -10,23 +10,13 @@
       <!-- <%= image_tag "https://i.imgur.com/MrHwiKC.png", size: "170x60" %> -->
     <% end %>
 
-    <ul class="navbar-nav pt-2 ml-4 mr-auto">
-      <li class="nav-item active">
-        <%= link_to "HOME", root_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "SOBRE", about_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "LOJA", products_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "CONTATO", contact_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <b><%= link_to "APOIE O PROJETO", root_path, class: "nav-link donate" %></b>
-      </li>
-    </ul>
+    <div class="nav-item">
+      <a href="/" class="nav-link">HOME</a>
+      <a href="/about" class="nav-link">SOBRE</a>
+      <a href="/products" class="nav-link">LOJA</a>
+      <a href="/contact" class="nav-link">CONTATO</a>
+      <a href="/" class="nav-link donate">APOIE O PROJETO</a>
+    </div>
     
     <% if user_signed_in? %>
       <div class="nav-item d-flex align-items-center">
