@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400&display=swap');
 
 
 // Define fonts for body and headers
 $body-font: "Libre Franklin", "sans-serif";
-$headers-font: "Oswald", "sans-serif";
+$headers-font: "Libre Franklin", "sans-serif";
 
 
 // To use a font file (.woff) uncomment following lines

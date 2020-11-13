@@ -1,9 +1,81 @@
-.card-product-index {
-  justify-content: space-around;
+// <<<<<<< HEAD
+// .card-product-index {
+//   justify-content: space-around;
+// }
+
+// .card-product-index-img {
+//   max-width: 500px;
+//   max-height: 500px;
+//   justify-content: center;
+.card-deck {
+  padding-top: 50px;
+  margin-right: 40px;
+  margin-left: 30%;
+  text-align: center;
+  p {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 20px;
+  }
+
+  .card-img-top {
+     margin: 30px;
+   }
 }
 
-.card-product-index-img {
-  max-width: 500px;
-  max-height: 500px;
-  justify-content: center;
+#check {
+  display: none;
+}
+
+#icone {
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.barra {
+  background-color: #d6d2c4;
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  transition: all .2s linear;
+  margin-top: 60px;
+}
+
+.nav-sidebar {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    color: $pink;
+    font-weight: bolder !important;
+  }
+}
+
+.link {
+  background-color: #d6d2c4;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12pt;
+  transition: all .2s linear;
+  color: $pink !important;
+  border-bottom: 2px solid #7e7474;
+}
+.link:hover {
+  background-color: #c4b6b6;
+}
+
+#check {
+	&:checked {
+		~ {
+			.barra {
+				transition: translateX(300px);
+			}
+		}
+	}
 }

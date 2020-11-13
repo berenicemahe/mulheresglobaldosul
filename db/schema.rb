@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_28_004123) do
+ActiveRecord::Schema.define(version: 2020_10_28_171421) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,15 +45,6 @@ ActiveRecord::Schema.define(version: 2020_10_28_004123) do
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
-  create_table "offices", force: :cascade do |t|
-    t.string "name"
-    t.string "address"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.float "latitude"
-    t.float "longitude"
-  end
-
   create_table "product_carts", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.bigint "cart_id", null: false
@@ -83,6 +74,7 @@ ActiveRecord::Schema.define(version: 2020_10_28_004123) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
