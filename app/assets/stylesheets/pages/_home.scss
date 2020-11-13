@@ -40,7 +40,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $pink;
+  background-color: #f4f4f4;
 }
 
 .image-two {
@@ -54,7 +54,7 @@ h1 {
 .paragraph-two {
   width: 400px;
   text-align: justify;
-  p {
+  h6 {
     line-height: 2;
     margin: 0px;
   }
@@ -67,7 +67,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #f4f4f4;
 }
 
 .image-three {
@@ -81,7 +81,7 @@ h1 {
 .paragraph-three {
   width: 400px;
   text-align: justify;
-  p {
+  h6 {
     line-height: 2;
     margin: 0px;
   }
@@ -94,7 +94,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $pink;
+  background-color: #f4f4f4;
 }
 
 .image-four {
@@ -108,7 +108,7 @@ h1 {
 .paragraph-four {
   width: 400px;
   text-align: justify;
-  p {
+  h6 {
     line-height: 2;
     margin: 0px;
   }
@@ -116,7 +116,44 @@ h1 {
 
 // BANNER FIVE
 
+
 .banner-five {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
+  h5 {
+    margin: 0px;
+    color: $gray;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .farm {
+    width: 200px;
+  }
+  .lenny {
+    width: 370px;
+  }
+  .animale {
+    width: 130px;
+  }
+}
+
+
+// BANNER SIX
+
+
+/* .banner-five {
   display: flex;
   width: 100%;
   height: auto;
@@ -162,4 +199,4 @@ h1 {
   align-items: center;
   flex-direction: row-reverse;
   width: 600px;
-}
+} */
