@@ -16,6 +16,7 @@
     <p><%= link_to "Deletar Produto", product_path(@product.id), class: "btn btn-outline-dark", method: :delete, data: { confirm: "Delete #{@product.name}?" } %></p>
    <% end %>
   <p><%= link_to "Voltar à galeria", products_path, class: "btn btn-dark" %></p>
+  <p><%= link_to "Comprar", carts_path, class: "btn btn-dark" %></p>
   </div> 
   
   <div class="product-image ml-5 mt-5 pl-5 mr-5 pr-5">

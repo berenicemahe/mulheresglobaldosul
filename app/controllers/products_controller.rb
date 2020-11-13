@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-     @products = policy_scope(Product)
+    @products = policy_scope(Product)
   end
 
   def show
