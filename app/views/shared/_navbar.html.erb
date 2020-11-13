@@ -3,7 +3,7 @@
     <%= image_tag("logo.png") %>
     <!-- <%= image_tag "https://i.imgur.com/MrHwiKC.png", size: "170x60" %> -->
   <% end %>
-  
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,7 +26,7 @@
         <b><%= link_to "APOIE O PROJETO", root_path, class: "nav-link donate" %></b>
       </li>
     </ul>
-    
+
     <% if user_signed_in? %>
       <div class="nav-item d-flex align-items-center">
         <a class="cart mr-3" href="#" role="button"><i class="fas fa-shopping-cart"></i></a>

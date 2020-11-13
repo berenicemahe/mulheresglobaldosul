@@ -1,1 +1,25 @@
-<h1>Products show</h1>
+<div class="container mt-5 mb-5">
+  <div class="cards">
+    <div class="row no-gutters product-card" style='margin-top: 30px; margin-bottom: 30px;'>
+      <div class="col-xs-12 col-md-5">
+          <%= image_tag("https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80", class: "image-product-show")%>
+      </div>
+
+      <div class="col-xs-12 col-md-7">
+        <div class="product-title">
+          <h2 class="mt-5 mb-3" style="text-align: center;"><strong><%= @product.name.upcase %></strong></h2>
+          <p style="margin-bottom: 30px"><i><%= @product.description %></i></p>
+          <h5 style="margin-bottom: 30px"><strong><%= "R$ #{@product.price},00" %></strong></h5>
+          <p style="margin-bottom: 30px">Size: <%= @product.size %></p>
+          <div class="button-product-show">
+            <p><%= link_to "Add to cart", product_carts_path(product_id: @product.id), method: :post, class: "btn btn-info cadastrar" %></p>
+            <p><%= link_to "All Products", products_path, class: "btn btn-outline-info" %></p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

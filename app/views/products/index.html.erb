@@ -1,8 +1,12 @@
-<div class="card-deck">
+<div class="row row-cols-1 row-cols-md-3" style="margin-top: 100px; margin-bottom: 100px;">
   <% @products.each do |product| %>
-  <div class="row card-img-top col-md-3" >
-    <img class=""><%= cl_image_tag product.photo.key, height: 280, width: 280, crop: :fill, alt: product.name %>
-    <p><%= "#{product.name}" %></p>
-  </div>
+    <div class="col mb-4">
+      <div class="card-product-index">
+        <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" class="card-product-index-img" alt="...">
+        <div class="card-product-index-body">
+          <h5 style="text-align: center; padding-top: 10px;"><%= "#{product.name}" %></h5>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
