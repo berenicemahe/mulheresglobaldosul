@@ -21,9 +21,16 @@ file = open(url)
 dresstwo.photo.attach(io: file, filename: filename)
 dresstwo.save!
 
+dressthree = Product.create!(name: "Green dress", description: "A flowery yellow dress, perfect for the summer coming", gender: "femino",
+                        size: "M", category: "vestidos e macacões", color: "amarelo", price: 60)
+url = 'https://i.imgur.com/JjLhp8X.jpg'
+# url = 'https://images.unsplash.com/photo-1584898663362-e4cc56fd3c37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+filename = File.basename(URI.parse(url).path)
+file = URI.open(url)
+dresstwo.photo.attach(io: file, filename: filename)
+dresstwo.save!
+
 puts "Produtos criados!"
-
-
 puts "Criando Usuários..."
 
 biancaferreira = User.create(email: "biancaferreiralp@gmail.com", password: "123456")
