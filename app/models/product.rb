@@ -1,5 +1,7 @@
 class Product < ApplicationRecord
 
+  searchkick
+
   has_one_attached :photo
 
   CATEGORY = ["accessórios", "bermudas e shorts", "blusas e camisetas", "blusões e suéteres",
@@ -14,5 +16,15 @@ class Product < ApplicationRecord
   validates :color, inclusion: { in: COLOR}
   validates :size, inclusion: { in: SIZE }
   validates :gender, inclusion: { in: GENDER }
+
+  # include PgSearch::Model
+  # pg_search_scope :product_search,
+  #   against: {
+  #    name: 'A',
+  #    description: 'B'
+  #   },
+  #   using: {
+  #     tsearch: { prefix: true }
+  #   }
 
 end
