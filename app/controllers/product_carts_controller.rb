@@ -1,7 +1,7 @@
 class ProductCartsController < ApplicationController
   def index
-    @product_carts = ProductCart.all
-  end
+    @product_carts = policy_scope(ProductCart)
+ end
 
   private
 

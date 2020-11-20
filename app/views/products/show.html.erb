@@ -1,24 +1,52 @@
-<div class= 'container'>
+
+<div class="container mt-5 mb-5">
+  <div class="cards">
+    <div class="row no-gutters product-card" style='margin-top: 30px; margin-bottom: 30px;'>
+      <div class="col-xs-12 col-md-5">
+          <%= image_tag("https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80", class: "image-product-show")%>
+      </div>
+
+      <div class="col-xs-12 col-md-7">
+        <div class="product-title">
+          <h2 class="mt-5 mb-3" style="text-align: center;"><strong><%= @product.name.upcase %></strong></h2>
+          <p style="margin-bottom: 30px"><i><%= @product.description %></i></p>
+          <h5 style="margin-bottom: 30px"><strong><%= "R$ #{@product.price},00" %></strong></h5>
+          <p style="margin-bottom: 30px">Size: <%= @product.size %></p>
+          <div class="button-product-show">
+            <p><%= link_to "Add to cart", product_carts_path(product_id: @product.id), method: :post, class: "btn btn-info cadastrar" %></p>
+            <p><%= link_to "All Products", products_path, class: "btn btn-outline-info" %></p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class= 'container'>
   <div class='product-infos'>
-    <h3 class="mt-5 mb-3"><strong><%= @product.name.upcase %></strong></h3>
+    <h3 class="mt-5 mb-3"><strong><%#= @product.name.upcase %></strong></h3>
     <ul>
     <p>Em <strong><%= @product.category.capitalize %></strong></p>
     <p><i><%= @product.description %></i></p>
-    <p><strong><%= "R$ #{@product.price}" %></strong></p>
-    <p>Gêmero: <%= @product.gender.capitalize %></p>    
-    <p>Tamanho: <%= @product.size %></p>
+    <p><strong><%#= "R$ #{@product.price}" %></strong></p>
+    <p>Gêmero: <%#= @product.gender.capitalize %></p>
+    <p>Tamanho: <%#= @product.size %></p>
     </ul>
   </div>
 
   <div>
-   <% if policy(Product).edit? %>
-    <p><%= link_to "Editar Produto", edit_product_path, class: "btn btn-outline-dark" %></p>
-    <p><%= link_to "Deletar Produto", product_path(@product.id), class: "btn btn-outline-dark", method: :delete, data: { confirm: "Delete #{@product.name}?" } %></p>
-   <% end %>
-  <p><%= link_to "Voltar à galeria", products_path, class: "btn btn-dark" %></p>
-  </div> 
-  
+   <%# if policy(Product).edit? %>
+    <p><%#= link_to "Editar Produto", edit_product_path, class: "btn btn-outline-dark" %></p>
+    <p><%#= link_to "Deletar Produto", product_path(@product.id), class: "btn btn-outline-dark", method: :delete, data: { confirm: "Delete #{@product.name}?" } %></p>
+   <%# end %>
+  <p><%#= link_to "Voltar à galeria", products_path, class: "btn btn-dark" %></p>
+  <p><%#= link_to "Comprar", carts_path, class: "btn btn-dark" %></p>
+  </div>
+
   <div class="product-image ml-5 mt-5 pl-5 mr-5 pr-5">
-    <p class="image"><%= cl_image_tag @product.photo.key, height: 500, width: 280, crop: :fill, alt: @product.name %></p>
+    <p class="image"><%#= cl_image_tag @product.photo.key, height: 500, width: 280, crop: :fill, alt: @product.name %></p>
   </div>
 </div>
