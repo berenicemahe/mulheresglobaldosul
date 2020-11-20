@@ -1,42 +1,3 @@
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag("image-four.jpeg") %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag("image-five.jpeg") %>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<div class="row no-gutters">
-  <div class="col-12">
-    <div class="header-one">
-      <%= image_tag("logo.png")%>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <div class="image-one">
-      <%= image_tag("image-one.jpeg")%>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
 <div class="row no-gutters">
   <div class="col-xs-12 col-md-6">
     <div class="header-one">
@@ -113,22 +74,6 @@
 <div class="row no-gutters">
   <div class="col-12">
     <div class="banner-five">
-      <div class="header-five mt-3">
-        <h5><b>NOSSOS PARCEIROS</b></h5>
-      </div>
-
-      <div class="partners list-inline mt-5">
-        <li><%= image_tag("farm.png", class: "farm") %></li>
-        <li><%= image_tag("lenny-niemeyer.png", class: "lenny ml-3") %></li>
-        <li><%= image_tag("animale.png", class: "animale ml-4 mr-5") %></li>
-      </div>
-    </div>
-  </div>
-</div>
-
-<%# <div class="row no-gutters">
-  <div class="col-12">
-    <div class="banner-five">
       <div class="header-five">
         <h5><b>TRANSFORME VIDAS COM A GENTE</b></h5>
       </div>
@@ -169,7 +114,7 @@
         </p>
       </div>
 
-      <div class="founder-avatar mt-5 mb-5">
+      <div class="founder-avatar mt-5 mb-3">
         <img src="http://res.cloudinary.com/dnd1jn5pp/image/upload/pnkq9j6kvnff5zl8fd2k" alt="Emanuela Pinheiro">
         <p class="mr-3">
           <b>Emanuela Pinheiro</b>
@@ -178,7 +123,24 @@
         </p>
       </div>
     </div>
-  </div> %>
+  </div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-12">
+      <div class="banner-six">
+        <div class="header-six mt-3">
+          <h5><b>ALGUNS DE NOSSOS APOIADORES</b></h5>
+        </div>
+
+        <div class="partners list-inline mt-5">
+          <li><%= image_tag("farm.png", class: "farm") %></li>
+          <li><%= image_tag("lenny-niemeyer.png", class: "lenny ml-3") %></li>
+          <li><%= image_tag("animale.png", class: "animale ml-4 mr-5") %></li>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <%#= render 'shared/_form' %>
 
