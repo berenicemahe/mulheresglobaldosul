@@ -10,12 +10,10 @@
 
 .navbar .nav-item {
   font-size: 13px;
+  display: flex;
   .donate {
     color: $pink !important;
-    &:hover {
-      color: $pink;
-      font-weight: bolder !important;
-    }
+    font-weight: bolder !important;
   }
   .login {
     font-size: 13px;
@@ -59,9 +57,4 @@
     color: $pink;
     font-weight: lighter;
   }
-}
-
-#navbarSupportedContent {
-  display: flex;
-  justify-content: space-between;
 }

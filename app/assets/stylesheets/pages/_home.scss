@@ -12,7 +12,6 @@ h1 {
   margin-bottom: 25px;
 }
 
-
 // BANNER ONE
 
  .header-one {
@@ -40,7 +39,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: $pink;
+  color: white;
 }
 
 .image-two {
@@ -67,7 +67,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: $pink;
+  color: white;
 }
 
 .image-three {
@@ -94,7 +95,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: $pink;
+  color: white;
 }
 
 .image-four {
@@ -116,7 +118,6 @@ h1 {
 
 // BANNER FIVE
 
-
 .banner-five {
   display: flex;
   width: 100%;
@@ -130,44 +131,6 @@ h1 {
   box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
   h5 {
     margin: 0px;
-    color: $gray;
-  }
-}
-
-.partners {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .farm {
-    width: 200px;
-  }
-  .lenny {
-    width: 370px;
-  }
-  .animale {
-    width: 130px;
-  }
-}
-
-
-// BANNER SIX
-
-
-/* .banner-five {
-  display: flex;
-  width: 100%;
-  height: auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  justify-content: center;
-  align-items: center;
-  color: $pink;
-  flex-direction: column;
-  background-color: white;
-  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
-  h5 {
-    margin: 0px;
-    color: $gray;
   }
   p {
     margin: 0px;
@@ -199,4 +162,38 @@ h1 {
   align-items: center;
   flex-direction: row-reverse;
   width: 600px;
-} */
+}
+
+// BANNER SIX
+
+.banner-six {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  /* box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2); */
+  h5 {
+    margin: 0px;
+    color: $gray;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .farm {
+    width: 200px;
+  }
+  .lenny {
+    width: 370px;
+  }
+  .animale {
+    width: 130px;
+  }
+}
