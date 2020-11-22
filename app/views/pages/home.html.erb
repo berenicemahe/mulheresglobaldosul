@@ -126,22 +126,20 @@
   </div>
 </div>
 
-<div class="row no-gutters">
-    <div class="col-12">
-      <div class="banner-six">
-        <div class="header-six mt-3">
-          <h5><b>ALGUNS DE NOSSOS APOIADORES</b></h5>
-        </div>
-
-        <div class="partners list-inline mt-5">
-          <li><%= image_tag("farm.png", class: "farm") %></li>
-          <li><%= image_tag("lenny-niemeyer.png", class: "lenny ml-3") %></li>
-          <li><%= image_tag("animale.png", class: "animale ml-4 mr-5") %></li>
-        </div>
-      </div>
-    </div>
+<div class="banner-six">
+  <div class="header-six mt-3 ml-3">
+    <h5><b>ALGUNS DE NOSSOS APOIADORES</b></h5>
   </div>
 
-  <%#= render 'shared/_form' %>
-
+  <div class="partners row mt-5 pt-3">
+    <div class="col-sm text-center">
+      <%= image_tag("farm.png", class: "farm") %>
+    </div>
+    <div class="col-sm text-center">
+      <%= image_tag("lenny-niemeyer.png", class: "lenny") %>
+    </div>
+    <div class="col-sm text-center">
+      <%= image_tag("animale.png", class: "animale ml-3") %>
+    </div>
+  </div>
 </div>
