@@ -2,16 +2,11 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:edit, :update, :show, :destroy]
   skip_before_action :authenticate_user!, only: %i[index show]
 
-  PRODUCTS_PER_PAGE = 24
-
   def index
-    @page = params.fetch(:page, 0).to_i
-    #@products = policy_scope(Product).offset(@page * PRODUCTS_PER_PAGE).limit(PRODUCTS_PER_PAGE)
-
     if params[:query].present?
       @products = Product.search(params[:query])
     else
-      @products = policy_scope(Product).offset(@page * PRODUCTS_PER_PAGE).limit(PRODUCTS_PER_PAGE)
+      @products = Product.paginate(:page => params[:page], per_page: 2)
     end
   end
 
@@ -62,6 +57,11 @@ class ProductsController < ApplicationController
   def set_product
     @product = Product.find(params[:id])
     authorize @product
+  end
+
+  def search
+    authorize @products
+    @product = Product.find(params[:id])
   end
 
   def product_params
