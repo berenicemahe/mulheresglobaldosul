@@ -128,7 +128,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   background-color: white;
-  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
+  /* box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2); */
   h5 {
     margin: 0px;
   }
@@ -138,7 +138,7 @@ h1 {
 }
 
 .paragraph-five {
-  width: 600px;
+  width: 100%;
   text-align: justify;
   line-height: 2;
   color: $gray;
@@ -150,7 +150,7 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
+  /* box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2); */
 }
 
 .founder-avatar p {
@@ -161,7 +161,6 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  width: 600px;
 }
 
 // BANNER SIX
@@ -176,7 +175,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   background-color: #f4f4f4;
-  /* box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2); */
+  box-shadow: 3px 3px 3px 3px rgba(134, 134, 134, 0.2);
   h5 {
     margin: 0px;
     color: $gray;
